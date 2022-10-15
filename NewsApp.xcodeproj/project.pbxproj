@@ -13,6 +13,10 @@
 		33A77E3728FAB7CA008C0922 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33A77E3528FAB7CA008C0922 /* Main.storyboard */; };
 		33A77E3928FAB7CB008C0922 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33A77E3828FAB7CB008C0922 /* Assets.xcassets */; };
 		33A77E3C28FAB7CB008C0922 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33A77E3A28FAB7CB008C0922 /* LaunchScreen.storyboard */; };
+		33A77E4428FAB8CC008C0922 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A77E4328FAB8CC008C0922 /* NewsCell.swift */; };
+		33A77E4A28FABB1E008C0922 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A77E4928FABB1E008C0922 /* News.swift */; };
+		33A77E4C28FABDFE008C0922 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A77E4B28FABDFE008C0922 /* Webservice.swift */; };
+		33A77E4E28FAE1CB008C0922 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A77E4D28FAE1CB008C0922 /* NewsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		33A77E3828FAB7CB008C0922 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33A77E3B28FAB7CB008C0922 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33A77E3D28FAB7CB008C0922 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33A77E4328FAB8CC008C0922 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		33A77E4928FABB1E008C0922 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		33A77E4B28FABDFE008C0922 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		33A77E4D28FAE1CB008C0922 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,51 @@
 		33A77E2E28FAB7CA008C0922 /* NewsApp */ = {
 			isa = PBXGroup;
 			children = (
-				33A77E2F28FAB7CA008C0922 /* AppDelegate.swift */,
-				33A77E3128FAB7CA008C0922 /* SceneDelegate.swift */,
-				33A77E3328FAB7CA008C0922 /* ViewController.swift */,
+				33A77E4828FABAF7008C0922 /* Service */,
+				33A77E4728FABAED008C0922 /* ViewModel */,
+				33A77E4628FABAE6008C0922 /* Model */,
+				33A77E4528FABAD4008C0922 /* View */,
 				33A77E3528FAB7CA008C0922 /* Main.storyboard */,
 				33A77E3828FAB7CB008C0922 /* Assets.xcassets */,
 				33A77E3A28FAB7CB008C0922 /* LaunchScreen.storyboard */,
 				33A77E3D28FAB7CB008C0922 /* Info.plist */,
 			);
 			path = NewsApp;
+			sourceTree = "<group>";
+		};
+		33A77E4528FABAD4008C0922 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				33A77E3328FAB7CA008C0922 /* ViewController.swift */,
+				33A77E2F28FAB7CA008C0922 /* AppDelegate.swift */,
+				33A77E3128FAB7CA008C0922 /* SceneDelegate.swift */,
+				33A77E4328FAB8CC008C0922 /* NewsCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		33A77E4628FABAE6008C0922 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				33A77E4928FABB1E008C0922 /* News.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		33A77E4728FABAED008C0922 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				33A77E4D28FAE1CB008C0922 /* NewsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		33A77E4828FABAF7008C0922 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				33A77E4B28FABDFE008C0922 /* Webservice.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +184,10 @@
 			files = (
 				33A77E3428FAB7CA008C0922 /* ViewController.swift in Sources */,
 				33A77E3028FAB7CA008C0922 /* AppDelegate.swift in Sources */,
+				33A77E4C28FABDFE008C0922 /* Webservice.swift in Sources */,
+				33A77E4428FAB8CC008C0922 /* NewsCell.swift in Sources */,
+				33A77E4E28FAE1CB008C0922 /* NewsViewModel.swift in Sources */,
+				33A77E4A28FABB1E008C0922 /* News.swift in Sources */,
 				33A77E3228FAB7CA008C0922 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
